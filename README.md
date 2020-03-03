@@ -1,6 +1,7 @@
-# PMD Source Code Analyzer Action
+# PMD Source Code Analyzer Action (Fix)
 
-This action allows to use PMD Source Code Analyzer from GitHub Actions
+This action allows to use PMD Source Code Analyzer from GitHub Actions and fixes a small issue regarding permissions. It is forked from 
+[https://github.com/sfdx-actions/setup-pmd](https://github.com/sfdx-actions/setup-pmd). Check his action out. Most of the documentation will remain the same. 
 
 ## Example usage
 
