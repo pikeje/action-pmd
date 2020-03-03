@@ -20,12 +20,12 @@ function installPMD(){
 }
 
 function referencePMD(){
-  var jre = 'apt-get install default-jre'
+//  var jre = 'apt-get install default-jre'
   var cmd = 
 `echo '#! /bin/bash
 $HOME/pmd/bin/run.sh pmd "$@"' > /usr/local/bin/pmd`
   var cm = 'chmod +x /usr/local/bin/pmd'
-  exec(jre+' && '+cmd+' && '+cm, function(error, stdout, stderr){
+  exec(cmd+' && '+cm, function(error, stdout, stderr){
     if(error) core.setFailed(stderr)
     core.debug(stdout)
   })
