@@ -1,22 +1,22 @@
 {
-  "name": "setup-pmd-action",
+  "name": "setup-pmd-action-fix",
   "version": "1.0.0",
-  "description": "This action allows to use PMD Source Code Analyzer from GitHub Actions",
+  "description": "This action allows to use PMD Source Code Analyzer from GitHub Actions (fix)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sfdx-actions/setup-pmd.git"
+    "url": "git+https://github.com/mcanog/setup-pmd.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sfdx-actions/setup-pmd/issues"
+    "url": "https://github.com/mcanog/setup-pmd/issues"
   },
-  "homepage": "https://github.com/sfdx-actions/setup-pmd#readme",
+  "homepage": "https://github.com/mcanog/setup-pmd#readme",
   "dependencies": {
     "@actions/core": "^1.2.0"
   }
