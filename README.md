@@ -16,9 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: mcanog/setup-pmd@2.0
+      - name: Setup JRE
+        uses: actions/setup-java@v1
+        with:
+          java-version: '13.0.2'
+          java-package: jre
+          architecture: x64
+
+      - uses: mcanog/setup-pmd@v1
       - name: run-pmd
-        run: pmd -d <source code> -R <ruleset> -f text
+        run: pmd -d <source code> -R <ruleset> -f xml --failOnViolation false > report.xml
 ```
 
 ## License
