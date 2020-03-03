@@ -24,7 +24,7 @@ function referencePMD(){
   var cmd = 
 `echo '#! /bin/bash
 $HOME/pmd/bin/run.sh pmd "$@"' > /usr/local/bin/pmd`
-  var cm = 'chmod +x /snap/bin/pmd'
+  var cm = 'chmod +x /usr/local/bin/pmd'
   exec(cmd+' && '+cm, function(error, stdout, stderr){
     if(error) core.setFailed(stderr)
     core.debug(stdout)
