@@ -20,7 +20,7 @@ function installPMD(){
 }
 
 function referencePMD(){
-  var jre = 'apt-get default-jre'
+  var jre = 'apt-get install default-jre'
   var cmd = 
 `echo '#! /bin/bash
 $HOME/pmd/bin/run.sh pmd "$@"' > /usr/local/bin/pmd`
