@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: mcanog/setup-pmd@1.0
+      - uses: mcanog/setup-pmd@2.0
       - name: run-pmd
         run: pmd -d <source code> -R <ruleset> -f text
 ```
