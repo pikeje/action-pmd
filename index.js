@@ -20,12 +20,12 @@ function installPMD(){
 }
 
 function referencePMD(){
-//  var mk = 'mkdir -p /snap/bin && chmod -R 757 /snap/bin'
+  var jre = 'apt-get default-jre'
   var cmd = 
 `echo '#! /bin/bash
 $HOME/pmd/bin/run.sh pmd "$@"' > /usr/local/bin/pmd`
   var cm = 'chmod +x /usr/local/bin/pmd'
-  exec(cmd+' && '+cm, function(error, stdout, stderr){
+  exec(jre+' && '+cmd+' && '+cm, function(error, stdout, stderr){
     if(error) core.setFailed(stderr)
     core.debug(stdout)
   })
