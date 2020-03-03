@@ -20,9 +20,9 @@ function installPMD(){
 }
 
 function referencePMD(){
-  var mk = 'sudo mkdir /snap/bin && sudo chmod -R 757 /snap/bin'
+  var mk = 'mkdir /snap/bin && chmod -R 757 /snap/bin'
   var cmd = 
-`sudo echo '#! /bin/bash
+`echo '#! /bin/bash
 $HOME/pmd/bin/run.sh pmd "$@"' > /snap/bin/pmd`
   var cm = 'chmod +x /snap/bin/pmd'
   exec(mk+' && '+cmd+' && '+cm, function(error, stdout, stderr){
