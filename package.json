@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mcanog/setup-pmd/issues"
+    "url": "https://github.com/pikeje/action-pmd/issues"
   },
-  "homepage": "https://github.com/mcanog/setup-pmd#readme",
+  "homepage": "https://github.com/pikeje/action-pmd#readme",
   "dependencies": {
     "@actions/core": "^1.2.0"
   }

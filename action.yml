@@ -1,5 +1,5 @@
 name: 'PMD Source Code Analyzer Action - Fix'
-author: Mauricio Cano - Forked from Felipe Echanique Torres
+author: Jordan Pike - Forked from Mauricio Cano
 description: 'This action allows to use PMD Source Code Analyzer from GitHub Actions and fixes a small issue with permissions'
 runs:
   using: 'node12'
